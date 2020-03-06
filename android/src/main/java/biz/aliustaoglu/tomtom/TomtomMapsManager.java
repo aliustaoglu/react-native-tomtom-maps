@@ -1,7 +1,8 @@
 package biz.aliustaoglu.tomtom;
 
 import android.view.View;
-import com.facebook.react.bridge.ReadableArray;
+import android.widget.LinearLayout;
+
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.SimpleViewManager;
@@ -26,31 +27,13 @@ public class TomtomMapsManager extends SimpleViewManager<View> {
     @Override
     protected View createViewInstance(@Nonnull ThemedReactContext reactContext) {
         TTMapView ttMapView = new TTMapView(reactContext);
-        ttMapView.onResume();
         return ttMapView;
     }
 
-
-    @ReactProp(name = "mapCenter")
-    public void setCenter(TTMapView mapView, @Nullable ReadableMap center) {
-        mapView.setMapCenter(center);
+    @ReactProp(name="camera")
+    public void setCamera(TTMapView ttMapView, @Nullable ReadableMap camera) {
+        ttMapView.setCamera(camera);
     }
-
-    @ReactProp(name = "markers")
-    public void setMarkers(TTMapView mapView, @Nullable ReadableArray markers) {
-        mapView.setMarkers(markers);
-    }
-
-    @ReactProp(name = "mapZoom")
-    public void setMapZoom(TTMapView mapView, @Nullable Integer zoom) {
-        mapView.setMapZoom(zoom);
-    }
-
-    @ReactProp(name="mapOptions")
-    public void setMapOptions(TTMapView mapView, @Nullable ReadableMap mapOptions){
-        mapView.setMapOptions(mapOptions);
-    }
-
 
     @Nullable
     @Override
