@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* TomtomMaps.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* TomtomMaps.m */; };
+		D38D447F23E0337500561C5D /* Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38D447E23E0337500561C5D /* Props.swift */; };
+		D38D448223E0339F00561C5D /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38D448123E0339F00561C5D /* Camera.swift */; };
+		D38D448423E033A700561C5D /* Markers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38D448323E033A700561C5D /* Markers.swift */; };
+		D38D448623E033AF00561C5D /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38D448523E033AF00561C5D /* Options.swift */; };
 		D3C67043231151DA00369576 /* TomtomViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C67042231151DA00369576 /* TomtomViewManager.swift */; };
 		D3C670452311527600369576 /* TomtomMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C670442311527600369576 /* TomtomMaps.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +31,10 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libTomtomMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTomtomMaps.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5891CC2AC0600A0062D /* TomtomMaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TomtomMaps.m; sourceTree = "<group>"; };
+		D38D447E23E0337500561C5D /* Props.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Props.swift; sourceTree = "<group>"; };
+		D38D448123E0339F00561C5D /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		D38D448323E033A700561C5D /* Markers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markers.swift; sourceTree = "<group>"; };
+		D38D448523E033AF00561C5D /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		D3C67041231151D900369576 /* TomtomMaps-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TomtomMaps-Bridging-Header.h"; sourceTree = "<group>"; };
 		D3C67042231151DA00369576 /* TomtomViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomtomViewManager.swift; sourceTree = "<group>"; };
 		D3C670442311527600369576 /* TomtomMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomtomMaps.swift; sourceTree = "<group>"; };
@@ -54,12 +62,24 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				D38D448023E0338200561C5D /* Props */,
+				D38D447E23E0337500561C5D /* Props.swift */,
 				D3C670442311527600369576 /* TomtomMaps.swift */,
 				D3C67042231151DA00369576 /* TomtomViewManager.swift */,
 				B3E7B5891CC2AC0600A0062D /* TomtomMaps.m */,
 				D3C67041231151D900369576 /* TomtomMaps-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		D38D448023E0338200561C5D /* Props */ = {
+			isa = PBXGroup;
+			children = (
+				D38D448123E0339F00561C5D /* Camera.swift */,
+				D38D448323E033A700561C5D /* Markers.swift */,
+				D38D448523E033AF00561C5D /* Options.swift */,
+			);
+			path = Props;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,8 +141,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C67043231151DA00369576 /* TomtomViewManager.swift in Sources */,
+				D38D448223E0339F00561C5D /* Camera.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* TomtomMaps.m in Sources */,
+				D38D447F23E0337500561C5D /* Props.swift in Sources */,
 				D3C670452311527600369576 /* TomtomMaps.swift in Sources */,
+				D38D448423E033A700561C5D /* Markers.swift in Sources */,
+				D38D448623E033AF00561C5D /* Options.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
