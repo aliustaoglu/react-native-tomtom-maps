@@ -3,6 +3,7 @@ package biz.aliustaoglu.tomtom;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.common.MapBuilder;
 import com.facebook.react.uimanager.SimpleViewManager;
@@ -30,9 +31,14 @@ public class TomtomMapsManager extends SimpleViewManager<View> {
         return ttMapView;
     }
 
-    @ReactProp(name="camera")
+    @ReactProp(name = "camera")
     public void setCamera(TTMapView ttMapView, @Nullable ReadableMap camera) {
         ttMapView.setCamera(camera);
+    }
+
+    @ReactProp(name = "markers")
+    public void setMarkers(TTMapView ttMapView, @Nullable ReadableArray markers) {
+        ttMapView.setMarkers(markers);
     }
 
     @Nullable
